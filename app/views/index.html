@@ -1,0 +1,25 @@
+<!-- views/index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task App</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  </head>
+  <body>
+    <h1>Task Allotment</h1>
+    <form id="add-task-form">
+      <label for="title">Person:</label>
+      <input type="text" id="title" name="title">
+      <br>
+      <label for="description">Task-Description:</label>
+      <textarea id="description" name="description"></textarea>
+      <br>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+  </body>
+</html>
