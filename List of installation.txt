@@ -1,0 +1,29 @@
+--> List of installation needed for CRUD API using postgresql with sequelizing database.
+
+-> npm install pg       //require to install postgresql driver
+
+-> npm install express body-parser   //require to setup api for fetching database
+
+-> npx sequelize-cli db:migrate  //for running the migration to create or alter database e.g. Creating a table
+
+-> sequelize migration:create --name __name_here__  //define your need like if you want to create column,row,table, etc.
+
+-> sequelize db:migrate  //follow up command to apply migration to the database
+
+//can also use:-
+-> npx sequelize-cli migration:generate --name create_tasks_table(name) //edit this file to define the table schema and any 													//other necessary database changes
+-> sequelize db:migrate    //apply migration to the database.
+
+-----------------------------------------------------------------------------
+
+--> npm install sequelize sequelize-cli    //to use sequelize-cli widely
+
+--> sequelize model:create  //specifying the name of the model and its attributes
+
+//if needed some sample data or pre-inserted data
+-> npx sequelize-cli seed:generate
+->npx sequelize-cli db:seed:all
+
+
+
+
